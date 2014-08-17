@@ -25,7 +25,7 @@
 
     // includes\reddit.jade compiled template
     templatizer["includes"]["reddit"] = function tmpl_includes_reddit() {
-        return '<li class="reddit list-group-item"><P><span><span role="title"></span></span></P><p><img role="thumbnail" width="40" height="40"/></p><p><span>\'Author: \'<span role="author"></span></span></p><P><span>\'Subreddit: \'<span role="subreddit"></span></span></P><div class="link"><a role="url" target="_blank">Link</a></div></li>';
+        return '<li class="reddit list-group-item"><P><span><span role="title"></span></span></P><p><img role="thumbnail" width="40" height="40"/></p><p><span>Author:&nbsp<span role="author"></span></span></p><P><span>Subreddit:&nbsp<span role="subreddit"></span></span></P><div class="link"><a role="url" target="_blank">Link</a></div></li>';
     };
 
     // pages\home.jade compiled template
