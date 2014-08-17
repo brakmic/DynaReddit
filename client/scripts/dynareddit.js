@@ -13,7 +13,7 @@ module.exports = State.extend({
                                                 // http://blog.pusher.com/pusher-realtime-reddit-api/
             }
         },
-        channels: {                         // a few hard-coded channels if we're not providing own
+        channels: {                         // a few hard-coded channels.
                      type: 'array',         // in future versions of this app I'll provide some visual interface to
                      default: function(){   // select more channels (but, this is just a demo ;)
                         return [
@@ -29,7 +29,7 @@ module.exports = State.extend({
                     },
         callback: 'any'   // callback which should be called when a new subreddit arrives
     },
-    initialize: function(){   // this function will be called once (consult http://ampersand.js.com/docs)
+    initialize: function(){   // this function will be called only once (consult http://ampersand.js.com/docs)
         var self = this;
         this.pusher = new Pusher(this.apiKey);  //initialize the Pusher + provide the API-Key
         console.log('Initializing DynaReddit with ApiKey: ' + this.apiKey);
