@@ -15,7 +15,7 @@
 
     // body.jade compiled template
     templatizer["body"] = function tmpl_body() {
-        return '<body><nav class="navbar navbar-default"><div class="container-fluid"><div class="navbar-header"><a href="/" class="navbar-brand">DynaReddit</a></div><ul class="nav navbar-nav"><li><a href="/">Home</a></li><li><a href="/reddits">Reddit Flow</a></li></ul></div></nav><div class="container"><main role="page-container"></main></div></body>';
+        return '<body><nav class="navbar navbar-default"><div class="container-fluid"><div class="navbar-header"><a href="/" class="navbar-brand">DynaReddit</a></div><ul class="nav navbar-nav"><li><a href="/">Home</a></li><li><a href="/reddits">Reddit Flow</a></li></ul></div></nav><div class="container"><div class="row"><div class="col-lg-12 text-center v-center"><p class="lead">A demo web app built with AmpersandJS & Pusher Realtime Reddit API<main role="page-container"></main></p></div></div></div></body>';
     };
 
     // head.jade compiled template
@@ -25,7 +25,7 @@
 
     // includes\reddit.jade compiled template
     templatizer["includes"]["reddit"] = function tmpl_includes_reddit() {
-        return '<li class="reddit list-group-item"><P><span><span role="title"></span></span></P><p><a role="url" target="_blank"><img role="thumbnail" width="40" height="40"/></a></p><p><span>Author:&nbsp<span role="author"></span></span></p><P><span>Subreddit:&nbsp<span role="subreddit"></span></span></P><div class="link"><a role="url" target="_blank">Link</a></div></li>';
+        return '<li class="reddit list-group-item"><div class="panel panel-default"><div class="panel-heading"><span role="subreddit"></span></div><div class="panel-body"><p><span><span role="title"></span></span></p><p><a role="url" target="_blank"><img role="thumbnail" width="40" height="40"/></a></p><p><span>Author:&nbsp<span role="author"></span></span></p><P><span>Subreddit:&nbsp<span role="subreddit"></span></span></P><div class="link"><a role="url" target="_blank">Link</a></div></div></div></li>';
     };
 
     // pages\home.jade compiled template

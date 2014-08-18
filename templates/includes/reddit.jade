@@ -1,15 +1,19 @@
 li.reddit.list-group-item
-    P
-        span
-            span(role='title')
-    p
-       a(role='url', target='_blank')
-            img(role='thumbnail', width='40', height='40')
-    p
-        span Author:&nbsp
-            span(role='author')
-    P
-        span Subreddit:&nbsp
+    div.panel.panel-default
+        div.panel-heading
             span(role='subreddit')
-    div.link
-        a(role='url', target='_blank') Link
+        div.panel-body
+            p
+                span
+                    span(role='title')
+            p
+               a(role='url', target='_blank')
+                    img(role='thumbnail', width='40', height='40')
+            p
+                span Author:&nbsp
+                    span(role='author')
+            P
+                span Subreddit:&nbsp
+                    span(role='subreddit')
+            div.link
+                a(role='url', target='_blank') Link
