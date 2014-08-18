@@ -15,7 +15,7 @@
 
     // body.jade compiled template
     templatizer["body"] = function tmpl_body() {
-        return '<body><nav class="navbar navbar-default"><div class="container-fluid"><div class="navbar-header"><a href="/" class="navbar-brand">DynaReddit</a></div><ul class="nav navbar-nav"><li><a href="/">Home</a></li><li><a href="/reddits">Reddit Flow</a></li></ul></div></nav><div class="container"><div class="row"><div class="col-lg-12 text-center v-center"><p class="lead">A demo web app built with AmpersandJS & Pusher Realtime Reddit API<main role="page-container"></main></p></div></div></div></body>';
+        return '<body><nav class="navbar navbar-default"><div class="container-fluid"><div class="navbar-header"><a href="/" class="navbar-brand">DynaReddit</a></div><ul class="nav navbar-nav"><li><a href="/">Home</a></li><li><a href="/reddits">Reddit Flow</a></li></ul></div></nav><div class="container"><div class="row"><div class="col-lg-12 text-center v-center"><p class="lead">A demo web app built with&nbsp<a href="http://ampersandjs.com" target="_blank">AmpersandJS&nbsp</a>&&nbsp<a href="http://pusher.com" target="_blank">Pusher Realtime Reddit API</a><main role="page-container"></main></p></div></div></div></body>';
     };
 
     // head.jade compiled template
