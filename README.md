@@ -2,7 +2,7 @@
 
 This app shows subreddits in real-time by utilizing the Pusher Realtime Reddit API (http://pusher.com).
 
-More info regarding the Pusher API can be found here: http://blog.pusher.com/pusher-realtime-reddit-api/
+More info about Pusher API: http://blog.pusher.com/pusher-realtime-reddit-api
 
 The app is based on AmpersandJS (http://ampersandjs.com)
 
