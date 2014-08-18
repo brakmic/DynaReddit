@@ -19,7 +19,7 @@ module.exports = Router.extend({
 
     reddits: function(){
         this.trigger('page', new RedditPage({
-            collection: reddits
+            collection: reddits  //forward the reddits collection from DynaReddits-object
         }));
     },
 
