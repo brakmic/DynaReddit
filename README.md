@@ -1,8 +1,8 @@
 # DynaReddit
 
-This app shows subreddits in real-time by utilizing the Pusher Realtime Reddit API (http://pusher.com).
+This app shows subreddits in real-time via the Pusher API (http://pusher.com)
 
-More info about Pusher API: http://blog.pusher.com/pusher-realtime-reddit-api
+More info about the API: http://blog.pusher.com/pusher-realtime-reddit-api
 
 The app is based on AmpersandJS (http://ampersandjs.com)
 
