@@ -17,19 +17,6 @@ This app was generated with the [ampersand cli tool](http://ampersandjs.com/lear
 1. run it: `npm start`
 1. open http://localhost:3000 in a browser
 
-## How it's structured
-
-See docs: http://ampersandjs.com/
-Curated modules: http://tools.ampersandjs.com/
-
-## Credits
-
-Built by folks at [&yet](http://andyet.com).
-
-## Want a deeper understanding?
-
-Get the book: http://humanjavascript.com
-
 ## License
 
 MIT
