@@ -23,12 +23,11 @@ module.exports = View.extend({
         'click a[href]': 'handleLinkClick'
     },
     render: function () {
+
         // some additional stuff we want to add to the document head
         document.head.appendChild(domify(templates.head()));
-
         // main renderer
         this.renderWithTemplate({me: me});
-
         // init and configure our page switcher
         this.pageSwitcher = new ViewSwitcher(this.getByRole('page-container'), {
             show: function (newView, oldView) {

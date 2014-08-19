@@ -1,4 +1,5 @@
 /*global app, me, $*/
+var $ = require('jquery');
 var _ = require('underscore');
 var logger = require('andlog');
 var config = require('clientconfig');
@@ -18,7 +19,7 @@ module.exports = {
 
         // create our global 'me' object and an empty collection for our people models.
         window.me = new Me();
-
+        window.$ = $;
         // make the reddits globally available
         // this collection will be updated by the callback method below
         window.reddits = new Reddits();

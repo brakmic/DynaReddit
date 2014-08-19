@@ -1,6 +1,6 @@
 body
-  nav.navbar.navbar-default
-    div.container-fluid
+  nav.navbar.navbar-default.navbar-inverse
+    div.container
       div.navbar-header
         a.navbar-brand(href='/') DynaReddit
       ul.nav.navbar-nav
@@ -8,14 +8,8 @@ body
           a(href='/') Home
         li
           a(href='/reddits') Reddit Flow
-  .container
-    div.row
-      div.col-lg-12.text-center.v-center
-          p.lead A demo web app built with&nbsp
-            a(href='http://ampersandjs.com', target='_blank') AmpersandJS&nbsp
-            | &&nbsp
-            a(href='http://pusher.com', target='_blank') Pusher Realtime Reddit API
-            main(role="page-container")
+  div.container
+     main(role="page-container")
 
 
 

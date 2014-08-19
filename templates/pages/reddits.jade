@@ -1,5 +1,20 @@
 section.page.reddits
- div.container.container-lg-height
-        div.row.row-lg-height
-            div.col-xs-12.col-sm-6.col-md-4.col-lg-6.col-lg-height
-                ul.list-group(role='reddits')
+ div.container
+    div.row
+     div.col-xs-4
+     div.col-xs-4
+       div.input-group.span7.center
+         span Search
+         input.form-control(type='text', role='searchbox')
+     div.col-xs-4
+ div.container
+    div.row
+       div.col-xs-6.col-sm-3
+          ul.list-group.list-unstyled(role='reddits')
+       div.col-xs-6.col-sm-3
+          ul.list-group.list-unstyled(role='reddits2')
+       div.clearfix.visible-xs
+       div.col-xs-6.col-sm-3
+          ul.list-group.list-unstyled(role='reddits3')
+       div.col-xs-6.col-sm-3
+          ul.list-group.list-unstyled(role='reddits4')

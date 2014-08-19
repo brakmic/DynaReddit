@@ -15,7 +15,7 @@
 
     // body.jade compiled template
     templatizer["body"] = function tmpl_body() {
-        return '<body><nav class="navbar navbar-default"><div class="container-fluid"><div class="navbar-header"><a href="/" class="navbar-brand">DynaReddit</a></div><ul class="nav navbar-nav"><li><a href="/">Home</a></li><li><a href="/reddits">Reddit Flow</a></li></ul></div></nav><div class="container"><div class="row"><div class="col-lg-12 text-center v-center"><p class="lead">A demo web app built with&nbsp<a href="http://ampersandjs.com" target="_blank">AmpersandJS&nbsp</a>&&nbsp<a href="http://pusher.com" target="_blank">Pusher Realtime Reddit API</a><main role="page-container"></main></p></div></div></div></body>';
+        return '<body><nav class="navbar navbar-default navbar-inverse"><div class="container"><div class="navbar-header"><a href="/" class="navbar-brand">DynaReddit</a></div><ul class="nav navbar-nav"><li><a href="/">Home</a></li><li><a href="/reddits">Reddit Flow</a></li></ul></div></nav><div class="container"><main role="page-container"></main></div></body>';
     };
 
     // head.jade compiled template
@@ -25,17 +25,17 @@
 
     // includes\reddit.jade compiled template
     templatizer["includes"]["reddit"] = function tmpl_includes_reddit() {
-        return '<li class="reddit list-group-item"><div class="panel panel-default"><div class="panel-heading"><span role="subreddit"></span></div><div class="panel-body"><p><span><span role="title"></span></span></p><p><a role="url" target="_blank"><img role="thumbnail" width="40" height="40"/></a></p><p><span>Author:&nbsp<span role="author"></span></span></p><P><span>Subreddit:&nbsp<span role="subreddit"></span></span></P><div class="link"><a role="url" target="_blank">Link</a></div></div></div></li>';
+        return '<li class="reddit"><div class="panel panel-primary"><div class="panel-heading"><span role="subreddit"></span></div><div class="panel-body"><p><span><span role="title"></span></span></p><p><a role="url" target="_blank"><img role="thumbnail" width="40" height="40"/></a></p><p><span>Author:&nbsp<span role="author"></span></span></p><p><span>Subreddit:&nbsp<span role="subreddit"></span></span></p><div class="panel-footer"><div class="link"><a role="url" target="_blank">Link</a></div></div></div></div></li>';
     };
 
     // pages\home.jade compiled template
     templatizer["pages"]["home"] = function tmpl_pages_home() {
-        return '<section class="page home"><div role="reddits"><span class="info"><a href="http://blog.pusher.com/pusher-realtime-reddit-api">More info about the Pusher Realtime Reddit API</a></span></div></section>';
+        return '<section class="page home"><div class="container"><div class="row"><div role="reddits"><span class="info"><a href="http://blog.pusher.com/pusher-realtime-reddit-api" target="_blank">More info about the Pusher Realtime Reddit API</a></span></div></div></div></section>';
     };
 
     // pages\reddits.jade compiled template
     templatizer["pages"]["reddits"] = function tmpl_pages_reddits() {
-        return '<section class="page reddits"><div class="container container-lg-height"><div class="row row-lg-height"><div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 col-lg-height"><ul role="reddits" class="list-group"></ul></div></div></div></section>';
+        return '<section class="page reddits"><div class="container"><div class="row"><div class="col-xs-4"></div><div class="col-xs-4"><div class="input-group span7 center"><span>Search</span><input type="text" role="searchbox" class="form-control"/></div></div><div class="col-xs-4"></div></div></div><div class="container"><div class="row"><div class="col-xs-6 col-sm-3"><ul role="reddits" class="list-group list-unstyled"></ul></div><div class="col-xs-6 col-sm-3"><ul role="reddits2" class="list-group list-unstyled"></ul></div><div class="clearfix visible-xs"></div><div class="col-xs-6 col-sm-3"><ul role="reddits3" class="list-group list-unstyled"></ul></div><div class="col-xs-6 col-sm-3"><ul role="reddits4" class="list-group list-unstyled"></ul></div></div></div></section>';
     };
 
     return templatizer;
